@@ -1,12 +1,11 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
-import { TextInput } from 'react-native-web';
+import { StyleSheet, TextInput } from 'react-native'
 
 const UnosBroja = (props) => {
     return(
         <TextInput 
         { ...props }
-        style = {{...stil.unos, ...props.style }}
+        style = {{...stil.unos, ...props.style}}
         />
     );
 }

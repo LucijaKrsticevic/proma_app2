@@ -3,12 +3,13 @@ import {View, Text, StyleSheet} from 'react-native'
 
 const Naslov = (props) => {
     return(
-        <View style={stil.zaglavlje}>
-        <Text style={stil.naslov}>{props.naslov}</Text>
+        <View style = {stil.zaglavlje}>
+            <Text style={stil.naslov}>
+                {props.naslov}
+            </Text>
         </View>
-       )
-       
-}
+    ); 
+};
 
 const stil = StyleSheet.create({
     zaglavlje: {
@@ -18,12 +19,11 @@ const stil = StyleSheet.create({
         backgroundColor: "#fcba03",
         alignItems: "center",
         justifyContent: "center"
-        },
-        naslov: {
+    },
+    naslov: {
         color: "black",
         fontSize: 18
-        }
-       
+    }
 })
 
 export default Naslov;

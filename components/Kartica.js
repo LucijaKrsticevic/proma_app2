@@ -3,11 +3,10 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const Kartica = (props) => {
  return (
-    <View style={{...stil.kartica, ...props.stil}}>
+    <View style = {{...stil.kartica, ...props.stil}}>
         {props.children}
     </View>
-
- );
+   );
 };
 
 const stil = StyleSheet.create({
@@ -15,11 +14,11 @@ const stil = StyleSheet.create({
     backgroundColor: 'white',
     padding: 20,
     shadowColor: 'black',
-    shadowOffset: {width: 0, height: 2},
+    shadowOffset: {width: 0, height: 3},
     shadowRadius: 6,
     shadowOpacity: 0.75,
     elevation: 7,
-    borderRadius: 15
+    borderRadius: 10
  },
 })
 
